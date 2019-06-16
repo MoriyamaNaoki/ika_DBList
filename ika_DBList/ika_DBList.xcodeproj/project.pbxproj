@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEA47CC22B43AEA00D97EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA47CB22B43AEA00D97EBD /* AppDelegate.swift */; };
+		CEEA47CE22B43AEA00D97EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA47CD22B43AEA00D97EBD /* ViewController.swift */; };
+		CEEA47D122B43AEA00D97EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA47CF22B43AEA00D97EBD /* Main.storyboard */; };
+		CEEA47D322B43AEC00D97EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEA47D222B43AEC00D97EBD /* Assets.xcassets */; };
+		CEEA47D622B43AEC00D97EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA47D422B43AEC00D97EBD /* LaunchScreen.storyboard */; };
+		CEEA47E122B43AEC00D97EBD /* ika_DBListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA47E022B43AEC00D97EBD /* ika_DBListTests.swift */; };
+		CEEA47EC22B43AEC00D97EBD /* ika_DBListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA47EB22B43AEC00D97EBD /* ika_DBListUITests.swift */; };
+		CEEA47FB22B43B2A00D97EBD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEA47FA22B43B2A00D97EBD /* libsqlite3.0.tbd */; };
+		CEEA480922B43BB600D97EBD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA47FE22B43BB600D97EBD /* FMDatabaseQueue.m */; };
+		CEEA480A22B43BB600D97EBD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA480122B43BB600D97EBD /* FMDatabaseAdditions.m */; };
+		CEEA480B22B43BB600D97EBD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA480222B43BB600D97EBD /* FMDatabase.m */; };
+		CEEA480C22B43BB600D97EBD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA480622B43BB600D97EBD /* FMDatabasePool.m */; };
+		CEEA480D22B43BB600D97EBD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA480722B43BB600D97EBD /* FMResultSet.m */; };
+		CEEA481122B43DB500D97EBD /* ika_Data.db in Resources */ = {isa = PBXBuildFile; fileRef = CEEA481022B43DB500D97EBD /* ika_Data.db */; };
+		CEEA481322B4A34600D97EBD /* ikaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA481222B4A34600D97EBD /* ikaTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEA47DD22B43AEC00D97EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEA47C022B43AEA00D97EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEA47C722B43AEA00D97EBD;
+			remoteInfo = ika_DBList;
+		};
+		CEEA47E822B43AEC00D97EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEA47C022B43AEA00D97EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEA47C722B43AEA00D97EBD;
+			remoteInfo = ika_DBList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEA47C822B43AEA00D97EBD /* ika_DBList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ika_DBList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA47CB22B43AEA00D97EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEEA47CD22B43AEA00D97EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEEA47D022B43AEA00D97EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEA47D222B43AEC00D97EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEA47D522B43AEC00D97EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEEA47D722B43AEC00D97EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEA47DC22B43AEC00D97EBD /* ika_DBListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ika_DBListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA47E022B43AEC00D97EBD /* ika_DBListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ika_DBListTests.swift; sourceTree = "<group>"; };
+		CEEA47E222B43AEC00D97EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEA47E722B43AEC00D97EBD /* ika_DBListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ika_DBListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEA47EB22B43AEC00D97EBD /* ika_DBListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ika_DBListUITests.swift; sourceTree = "<group>"; };
+		CEEA47ED22B43AED00D97EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEA47FA22B43B2A00D97EBD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		CEEA47FD22B43BB600D97EBD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CEEA47FE22B43BB600D97EBD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CEEA47FF22B43BB600D97EBD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CEEA480022B43BB600D97EBD /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CEEA480122B43BB600D97EBD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CEEA480222B43BB600D97EBD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CEEA480322B43BB600D97EBD /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CEEA480522B43BB600D97EBD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CEEA480622B43BB600D97EBD /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CEEA480722B43BB600D97EBD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CEEA480F22B43C1D00D97EBD /* ika_DBList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ika_DBList-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEEA481022B43DB500D97EBD /* ika_Data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ika_Data.db; sourceTree = "<group>"; };
+		CEEA481222B4A34600D97EBD /* ikaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikaTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEA47C522B43AEA00D97EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA47FB22B43B2A00D97EBD /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47D922B43AEC00D97EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47E422B43AEC00D97EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEA47BF22B43AEA00D97EBD = {
+			isa = PBXGroup;
+			children = (
+				CEEA480F22B43C1D00D97EBD /* ika_DBList-Bridging-Header.h */,
+				CEEA47FC22B43BB600D97EBD /* fmdb */,
+				CEEA47CA22B43AEA00D97EBD /* ika_DBList */,
+				CEEA47DF22B43AEC00D97EBD /* ika_DBListTests */,
+				CEEA47EA22B43AEC00D97EBD /* ika_DBListUITests */,
+				CEEA47C922B43AEA00D97EBD /* Products */,
+				CEEA47F922B43B2A00D97EBD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEA47C922B43AEA00D97EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA47C822B43AEA00D97EBD /* ika_DBList.app */,
+				CEEA47DC22B43AEC00D97EBD /* ika_DBListTests.xctest */,
+				CEEA47E722B43AEC00D97EBD /* ika_DBListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEA47CA22B43AEA00D97EBD /* ika_DBList */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA481022B43DB500D97EBD /* ika_Data.db */,
+				CEEA47CB22B43AEA00D97EBD /* AppDelegate.swift */,
+				CEEA47CD22B43AEA00D97EBD /* ViewController.swift */,
+				CEEA47CF22B43AEA00D97EBD /* Main.storyboard */,
+				CEEA481222B4A34600D97EBD /* ikaTableViewCell.swift */,
+				CEEA47D222B43AEC00D97EBD /* Assets.xcassets */,
+				CEEA47D422B43AEC00D97EBD /* LaunchScreen.storyboard */,
+				CEEA47D722B43AEC00D97EBD /* Info.plist */,
+			);
+			path = ika_DBList;
+			sourceTree = "<group>";
+		};
+		CEEA47DF22B43AEC00D97EBD /* ika_DBListTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA47E022B43AEC00D97EBD /* ika_DBListTests.swift */,
+				CEEA47E222B43AEC00D97EBD /* Info.plist */,
+			);
+			path = ika_DBListTests;
+			sourceTree = "<group>";
+		};
+		CEEA47EA22B43AEC00D97EBD /* ika_DBListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA47EB22B43AEC00D97EBD /* ika_DBListUITests.swift */,
+				CEEA47ED22B43AED00D97EBD /* Info.plist */,
+			);
+			path = ika_DBListUITests;
+			sourceTree = "<group>";
+		};
+		CEEA47F922B43B2A00D97EBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA47FA22B43B2A00D97EBD /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEEA47FC22B43BB600D97EBD /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA47FD22B43BB600D97EBD /* FMDatabase.h */,
+				CEEA47FE22B43BB600D97EBD /* FMDatabaseQueue.m */,
+				CEEA47FF22B43BB600D97EBD /* FMResultSet.h */,
+				CEEA480022B43BB600D97EBD /* FMDatabasePool.h */,
+				CEEA480122B43BB600D97EBD /* FMDatabaseAdditions.m */,
+				CEEA480222B43BB600D97EBD /* FMDatabase.m */,
+				CEEA480322B43BB600D97EBD /* FMDatabaseQueue.h */,
+				CEEA480522B43BB600D97EBD /* FMDatabaseAdditions.h */,
+				CEEA480622B43BB600D97EBD /* FMDatabasePool.m */,
+				CEEA480722B43BB600D97EBD /* FMResultSet.m */,
+			);
+			name = fmdb;
+			path = ika_DBList/fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEA47C722B43AEA00D97EBD /* ika_DBList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA47F022B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBList" */;
+			buildPhases = (
+				CEEA47C422B43AEA00D97EBD /* Sources */,
+				CEEA47C522B43AEA00D97EBD /* Frameworks */,
+				CEEA47C622B43AEA00D97EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ika_DBList;
+			productName = ika_DBList;
+			productReference = CEEA47C822B43AEA00D97EBD /* ika_DBList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEA47DB22B43AEC00D97EBD /* ika_DBListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA47F322B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBListTests" */;
+			buildPhases = (
+				CEEA47D822B43AEC00D97EBD /* Sources */,
+				CEEA47D922B43AEC00D97EBD /* Frameworks */,
+				CEEA47DA22B43AEC00D97EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEA47DE22B43AEC00D97EBD /* PBXTargetDependency */,
+			);
+			name = ika_DBListTests;
+			productName = ika_DBListTests;
+			productReference = CEEA47DC22B43AEC00D97EBD /* ika_DBListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEA47E622B43AEC00D97EBD /* ika_DBListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEA47F622B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBListUITests" */;
+			buildPhases = (
+				CEEA47E322B43AEC00D97EBD /* Sources */,
+				CEEA47E422B43AEC00D97EBD /* Frameworks */,
+				CEEA47E522B43AEC00D97EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEA47E922B43AEC00D97EBD /* PBXTargetDependency */,
+			);
+			name = ika_DBListUITests;
+			productName = ika_DBListUITests;
+			productReference = CEEA47E722B43AEC00D97EBD /* ika_DBListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEA47C022B43AEA00D97EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CEEA47C722B43AEA00D97EBD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CEEA47DB22B43AEC00D97EBD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CEEA47C722B43AEA00D97EBD;
+					};
+					CEEA47E622B43AEC00D97EBD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CEEA47C722B43AEA00D97EBD;
+					};
+				};
+			};
+			buildConfigurationList = CEEA47C322B43AEA00D97EBD /* Build configuration list for PBXProject "ika_DBList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEA47BF22B43AEA00D97EBD;
+			productRefGroup = CEEA47C922B43AEA00D97EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEA47C722B43AEA00D97EBD /* ika_DBList */,
+				CEEA47DB22B43AEC00D97EBD /* ika_DBListTests */,
+				CEEA47E622B43AEC00D97EBD /* ika_DBListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEA47C622B43AEA00D97EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA47D622B43AEC00D97EBD /* LaunchScreen.storyboard in Resources */,
+				CEEA481122B43DB500D97EBD /* ika_Data.db in Resources */,
+				CEEA47D322B43AEC00D97EBD /* Assets.xcassets in Resources */,
+				CEEA47D122B43AEA00D97EBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47DA22B43AEC00D97EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47E522B43AEC00D97EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEA47C422B43AEA00D97EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA47CE22B43AEA00D97EBD /* ViewController.swift in Sources */,
+				CEEA481322B4A34600D97EBD /* ikaTableViewCell.swift in Sources */,
+				CEEA480C22B43BB600D97EBD /* FMDatabasePool.m in Sources */,
+				CEEA480D22B43BB600D97EBD /* FMResultSet.m in Sources */,
+				CEEA47CC22B43AEA00D97EBD /* AppDelegate.swift in Sources */,
+				CEEA480922B43BB600D97EBD /* FMDatabaseQueue.m in Sources */,
+				CEEA480B22B43BB600D97EBD /* FMDatabase.m in Sources */,
+				CEEA480A22B43BB600D97EBD /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47D822B43AEC00D97EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA47E122B43AEC00D97EBD /* ika_DBListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEA47E322B43AEC00D97EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEA47EC22B43AEC00D97EBD /* ika_DBListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEA47DE22B43AEC00D97EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEA47C722B43AEA00D97EBD /* ika_DBList */;
+			targetProxy = CEEA47DD22B43AEC00D97EBD /* PBXContainerItemProxy */;
+		};
+		CEEA47E922B43AEC00D97EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEA47C722B43AEA00D97EBD /* ika_DBList */;
+			targetProxy = CEEA47E822B43AEC00D97EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEA47CF22B43AEA00D97EBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEA47D022B43AEA00D97EBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEA47D422B43AEC00D97EBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEA47D522B43AEC00D97EBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEA47EE22B43AED00D97EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEA47EF22B43AED00D97EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEA47F122B43AED00D97EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ika_DBList-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEA47F222B43AED00D97EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ika_DBList-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEA47F422B43AED00D97EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ika_DBList.app/ika_DBList";
+			};
+			name = Debug;
+		};
+		CEEA47F522B43AED00D97EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ika_DBList.app/ika_DBList";
+			};
+			name = Release;
+		};
+		CEEA47F722B43AED00D97EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ika_DBList;
+			};
+			name = Debug;
+		};
+		CEEA47F822B43AED00D97EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ika_DBListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ika-DBListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ika_DBList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEA47C322B43AEA00D97EBD /* Build configuration list for PBXProject "ika_DBList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA47EE22B43AED00D97EBD /* Debug */,
+				CEEA47EF22B43AED00D97EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA47F022B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA47F122B43AED00D97EBD /* Debug */,
+				CEEA47F222B43AED00D97EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA47F322B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA47F422B43AED00D97EBD /* Debug */,
+				CEEA47F522B43AED00D97EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEA47F622B43AED00D97EBD /* Build configuration list for PBXNativeTarget "ika_DBListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEA47F722B43AED00D97EBD /* Debug */,
+				CEEA47F822B43AED00D97EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEA47C022B43AEA00D97EBD /* Project object */;
+}
